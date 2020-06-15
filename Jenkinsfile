@@ -27,6 +27,12 @@ node {
         currentBuild.result = 'FAILED'
         throw err
     }
+	post {
+		always {
+		        sh "echo 'post demo'"
+		}
+    
+	}
 }
 
 
